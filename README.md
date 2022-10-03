@@ -15,29 +15,29 @@ https://math.mit.edu/~ptchoi
 ===============================================================
 
 Main programs:
-* MAIN_quad.m: producing generalized quad kirigami patterns
-* MAIN_triangle.m: producing generalized triangle kirigami patterns
-* MAIN_hexagon.m: producing generalized hexagon kirigami patterns
-* MAIN_islamicquad.m: producing generalized ancient Islamic quad kirigami patterns
-* MAIN_islamictriangle.m: producing generalized ancient Islamic triangle kirigami patterns
+* `MAIN_quad.m`: producing generalized quad kirigami patterns
+* `MAIN_triangle.m`: producing generalized triangle kirigami patterns
+* `MAIN_hexagon.m`: producing generalized hexagon kirigami patterns
+* `MAIN_islamicquad.m`: producing generalized ancient Islamic quad kirigami patterns
+* `MAIN_islamictriangle.m`: producing generalized ancient Islamic triangle kirigami patterns
 
 In each main program, the following parameters can be changed:
-* width: the number of columns of unit cells in the kirigami pattern
-* height: the number of rows of unit cells in the kirigami pattern
-* shape_name: load a pre-defined target shape in the library
-* initial_map_type: the type of the initial map for the optimization in the deployed space (1: standard, 2: rescaled, 3: conformal, 4: Teichmuller)
-* (only for quad and triangle) fix_contracted_boundary_shape: enforce the desired contracted pattern to be rectangular (0: no, 1: yes)
-* (only for quad and triangle) rectangular_ratio: further specify the width-to-height ratio if the contracted pattern is required to be rectangular (0:  no/not applicable, other positive number: the prescribed ratio)
-* (only for hexagon) fix_regular_shape: enforce the all angles to be $2\pi/3$ (0: no, 1: yes)
+* `width`: the number of columns of unit cells in the kirigami pattern
+* `height`: the number of rows of unit cells in the kirigami pattern
+* `shape_name`: load a pre-defined target shape in the library
+* `initial_map_type`: the type of the initial map for the optimization in the deployed space (1: standard, 2: rescaled, 3: conformal, 4: Teichmuller)
+* (only for quad and triangle) `fix_contracted_boundary_shape`: enforce the desired contracted pattern to be rectangular (0: no, 1: yes)
+* (only for quad and triangle) `rectangular_ratio`: further specify the width-to-height ratio if the contracted pattern is required to be rectangular (0:  no/not applicable, other positive number: the prescribed ratio)
+* (only for hexagon) `fix_regular_shape`: enforce the all angles to be $2\pi/3$ (0: no, 1: yes)
 
 
 Remarks:
-* Some precomputed examples can be found in the "results" folder
+* Some precomputed examples can be found in the `results` folder
   * All parameters used are encoded in the file names:
      * (For quad/triangle) unitcelltype_shapename_width_height_initialmaptype_fixcontractedboundary_rectangularratio_contracted/deployed
      * (For hexagon) unitcelltype_shapename_width_height_initialmaptype_fixregularshape_contracted/deployed
      * (For ancient Islamic) unitcelltype_shapename_width_height_initialmaptype_contracted/deployed
-* To create other user-defined target shapes, see the functions in the "shapes" folder 
+* To create other user-defined target shapes, see the functions in the `shapes` folder 
 * If the optimization terminates prematurely or does not produce a desirable pattern, please try:
   * Changing the algorithm used in fmincon (sqp or interior-point)
   * Changing other fmincon parameters (MaxFunctionEvaluations, MaxIterations, ConstraintTolerance, StepTolerance)
