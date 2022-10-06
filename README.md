@@ -5,7 +5,7 @@ Constrained optimization framework for inverse kirigami design
 
 If you use this code in your work, please cite the following paper:
 
-G. P. T. Choi, L. H. Dudte, and L. Mahadevan, 
+> G. P. T. Choi, L. H. Dudte, and L. Mahadevan, 
 "[Programming shape using kirigami tessellations](https://doi.org/10.1038/s41563-019-0452-y)." Nature Materials, 18(9), 999-1004, 2019.
 
 Copyright (c) 2019-2022, Gary P. T. Choi, Levi H. Dudte, L. Mahadevan
