@@ -3,6 +3,8 @@ Constrained optimization framework for inverse kirigami design
 
 <img src = "https://github.com/garyptchoi/inverse-kirigami-design/blob/main/inverse-kirigami-design.png" width="680" height="425" />
 
+<img src = "https://github.com/garyptchoi/inverse-kirigami-design/blob/main/kirigami-gallery.png" width="680" height="453" />
+
 If you use this code in your work, please cite the following paper:
 
 > G. P. T. Choi, L. H. Dudte, and L. Mahadevan, 
