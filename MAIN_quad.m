@@ -1,6 +1,5 @@
 % Main program for designing generalized quad kirigami patterns
 %
-%
 % If you use this code in your work, please cite:
 %
 % G. P. T. Choi, L. H. Dudte, and L. Mahadevan, 
@@ -13,11 +12,11 @@ clearvars
 addpath(genpath('.'))
 
 % Set the kirigami pattern size
-width = 4;
+width = 4; 
 height = 4;
 
-% Choose the target deployed shape
-shapes = {'circle', 'egg', 'rainbow', 'anvil', 'shear', 'wedge', 'star', 'wavy'}; % Library of pre-defined shapes
+% Choose the 2D target deployed shape from a library of pre-defined shapes
+shapes = {'circle','egg','rainbow','anvil','shear','wedge','star','wavy','rect'}; 
 shape_name = shapes{1};
 % shape_name = shapes{2};
 % shape_name = shapes{3};
@@ -26,6 +25,7 @@ shape_name = shapes{1};
 % shape_name = shapes{6};
 % shape_name = shapes{7};
 % shape_name = shapes{8};
+% shape_name = shapes{9};
     
 % Set the type of the initial map for the optimization in the deployed space
 % 1: standard deployed configuration
@@ -49,7 +49,7 @@ fix_contracted_boundary_shape = 1;
 % be rectangular? 0 (no/not applicable) / other positive number (the prescribed ratio)
 % rectangular_ratio = 0; % no need to specify / not applicable
 rectangular_ratio = 1; % desired to be a square
-% rectangular_ratio = 1.5; % 2 means desired width-to-height ratio = 2:1, can be changed to other values
+% rectangular_ratio = 2; % 2 means desired width-to-height ratio = 2:1, can be changed to other values
 
 
 %% construct the tessellation and the initial guess
