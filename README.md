@@ -10,9 +10,9 @@ If you use this code in your work, please cite the following paper:
 > G. P. T. Choi, L. H. Dudte, and L. Mahadevan, 
 "[Programming shape using kirigami tessellations](https://doi.org/10.1038/s41563-019-0452-y)." Nature Materials, 18(9), 999-1004, 2019.
 
-Copyright (c) 2019-2022, Gary P. T. Choi, Levi H. Dudte, L. Mahadevan
+Copyright (c) 2019-2024, Gary P. T. Choi, Levi H. Dudte, L. Mahadevan
 
-https://math.mit.edu/~ptchoi
+https://www.math.cuhk.edu.hk/~ptchoi
 
 ===============================================================
 
