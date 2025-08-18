@@ -33,7 +33,7 @@ In each main program, the following parameters can be changed:
 * (for 3D) `initial_map_type`: the type of the initial map for the optimization in the deployed space (1: standard, 2: rescaled, 3: analytic, 4: Teichmuller)
 * (only for quad and triangle) `fix_contracted_boundary_shape`: enforce the desired contracted pattern to be rectangular (0: no, 1: yes)
 * (only for quad and triangle) `rectangular_ratio`: further specify the width-to-height ratio if the contracted pattern is required to be rectangular (0:  no/not applicable, other positive number: the prescribed ratio)
-* (only for hexagon) `fix_regular_shape`: enforce the all angles to be $2\pi/3$ (0: no, 1: yes)
+* (only for hexagon) `fix_regular_shape`: enforce all angles to be $2\pi/3$ (0: no, 1: yes)
 
 
 Remarks:
@@ -42,7 +42,7 @@ Remarks:
      * (For quad/triangle) unitcelltype_shapename_width_height_initialmaptype_fixcontractedboundary_rectangularratio_contracted/deployed
      * (For hexagon) unitcelltype_shapename_width_height_initialmaptype_fixregularshape_contracted/deployed
      * (For ancient Islamic) unitcelltype_shapename_width_height_initialmaptype_contracted/deployed
-* To create other user-defined target shapes, see the functions in the `shapes` folder 
+* To create other user-defined target shapes, see the functions in the `shapes` and `shapes_3D` folders 
 * If the optimization terminates prematurely or does not produce a desirable pattern, please try:
   * Changing the algorithm used in fmincon (sqp or interior-point)
   * Changing other fmincon parameters (MaxFunctionEvaluations, MaxIterations, ConstraintTolerance, StepTolerance)
