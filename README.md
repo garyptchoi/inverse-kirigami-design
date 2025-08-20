@@ -60,3 +60,7 @@ Dependencies:
 * [DistMesh](http://persson.berkeley.edu/distmesh/) (for Teichmuller initial map)
 
 * [Kabsch Algorithm](https://www.mathworks.com/matlabcentral/fileexchange/25746-kabsch-algorithm) (for rotating the resulting contracted pattern)
+
+* [point2trimesh](https://www.mathworks.com/matlabcentral/fileexchange/52882-point2trimesh-distance-between-point-and-triangulated-surface) (for shape matching constraint in 3D)
+
+* [AxelRot](https://www.mathworks.com/matlabcentral/fileexchange/30864-3d-rotation-about-shifted-axis) (for 3D rotation of tiles)
